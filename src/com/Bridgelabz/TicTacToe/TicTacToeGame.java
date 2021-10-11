@@ -8,9 +8,10 @@ public class TicTacToeGame {
 	
 	public static void main(String[] args){
         System.out.println("play game");
-        createBoard();
+        createBoard();      
         playerChoice();
         showBoard();
+        moveToDesireLocation();
    }
 	//method: create Board
 	public static void createBoard(){
@@ -48,4 +49,44 @@ public class TicTacToeGame {
 		System.out.println("--------");
 		System.out.println(board[7] + " |" + board[8] + " |" + board[9]);
 	}
+	
+	//method: move to desired location
+	public static void moveToDesireLocation() {
+		System.out.println("Please enter desired location between 1 to 9");
+		Scanner sc = new Scanner(System.in);
+		int location = sc.nextInt();
+		//switch case to select location
+		switch(location) {
+		case 1:
+			board[1] = player;
+			break;
+		case 2:
+			board[2] = player;
+			break;
+		case 3:
+			board[3] = player;
+			break;
+		case 4:
+			board[4] = player;
+			break;
+		case 5:
+			board[5] = player;
+			break;
+		case 6:
+			board[6] = player;
+			break;
+		case 7:
+			board[7] = player;
+			break;
+		case 8:
+			board[8] = player;
+			break;
+		case 9:
+			board[9] = player;
+			break;
+		default:
+			System.out.println("Enter valid number");
+		}
+	}
+
 }
