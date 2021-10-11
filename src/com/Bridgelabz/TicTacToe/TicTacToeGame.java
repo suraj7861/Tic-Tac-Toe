@@ -32,8 +32,8 @@ public class TicTacToeGame {
 				
 			}
 			else if(player1 == 'O') {
-				player1 = 'X';
-				player2 = 'O';
+				player1 = 'O';
+				player2 = 'X';
 				
 			}
 		}
