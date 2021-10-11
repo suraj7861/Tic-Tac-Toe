@@ -22,9 +22,9 @@ public class TicTacToeGame {
 			char player1, player2;
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Enter player1 choise 'X' or 'O'");
-			player1 = sc.next().charAt('X');
+			player1 = sc.next().charAt(0);
 			System.out.println("Enter player1 choise 'X' or 'O'");
-			player2 = sc.next().charAt('O');
+			player2 = sc.next().charAt(0);
 			
 			if(player1 == 'X') {
 				player1 = 'X';
